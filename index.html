@@ -293,7 +293,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
   align-items: center;
-  background: var(--cream);
+  background: var(--sand);
 }
 .problem-label {
   font-size: 0.7rem;
@@ -340,10 +340,11 @@ nav {
   gap: 1rem;
   padding: 1rem 0;
   border-bottom: 1px solid var(--sand);
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: var(--deep);
-  opacity: 0.75;
+  opacity: 1;
+  font-weight: 500;
 }
 .problem-list li:first-child { border-top: 1px solid var(--sand); }
 .problem-list li::before {
@@ -451,7 +452,8 @@ nav {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
   gap: 1px;
   background: rgba(255,255,255,0.07);
   border-radius: 18px;
@@ -467,6 +469,7 @@ nav {
   transition: background 0.25s;
   cursor: default;
   position: relative;
+  min-height: 260px;
 }
 .service-card:hover { background: rgba(200,214,43,0.05); }
 .service-card-accent {
@@ -1184,17 +1187,15 @@ footer {
     <p class="hero-eyebrow">People & Operations Consultant</p>
     <h1 class="hero-h1">
       Your team is growing.<br>
-      Your ops <em>haven't<br>caught up.</em>
+      Your ops systems <em>haven't<br>kept up.</em>
     </h1>
     <p class="hero-sub">
-      I come in and fix that. Clear systems, confident teams, and the operational foundations that actually scale — without the full-time price tag.
+      I come in and fix that. Clear systems, confident teams, and the operational foundations that actually scale without the full-time price tag.
     </p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">Work With Me</a>
       <a href="#services" class="btn-ghost">See How I Help</a>
     </div>
-    <!-- Social proof — reduces friction, builds immediate trust -->
-    <p class="hero-proof">Trusted by <strong>early-stage founders</strong> across health-tech, SaaS, and professional services.</p>
   </div>
 </section>
 
@@ -1221,27 +1222,23 @@ footer {
 </div>
 
 <!-- ═══ PROBLEM ═══ -->
-<!-- Psychology: name the pain before offering the solution. People feel seen first. -->
 <section class="problem" id="problem">
   <div>
-    <p class="problem-label">Sound familiar?</p>
-    <h2 class="problem-h2">
+    <p class="problem-label" style="font-size: 1.1rem; opacity: 1; color: var(--charge); background: var(--bottle); display: inline-block; padding: 0.4rem 1rem; border-radius: 100px; letter-spacing: 0.08em;">Sound familiar?</p>
+    <h2 class="problem-h2" style="margin-top: 1.25rem;">
       Growing fast is exciting.<br>
       <em>Operational chaos<br>is not.</em>
     </h2>
   </div>
   <div class="problem-right">
     <ul class="problem-list">
+      <li>Your Notion workspace is a mess nobody actually uses</li>
       <li>Hiring is inconsistent and taking too long</li>
       <li>New people join and have no idea how things work</li>
-      <li>You're making people decisions without a framework</li>
-      <li>The team culture felt great at five people — now it's slipping</li>
+      <li>You're making decisions without a clear framework</li>
+      <li>The team culture felt great at five people. Now it's slipping.</li>
       <li>Everyone's heads-down but nothing feels joined up</li>
     </ul>
-    <!-- Reframe — after pain, introduce possibility without selling yet -->
-    <div class="problem-reframe">
-      <p>You don't need a full-time Head of People. You need <strong>the right person, right now</strong> — someone who can build the foundations and get out of your way.</p>
-    </div>
   </div>
 </section>
 
@@ -1258,38 +1255,33 @@ footer {
   <div class="services-grid">
     <div class="service-card">
       <div class="service-num">01</div>
-      <div class="service-title">People Operations</div>
-      <div class="service-desc">Hiring systems, onboarding, performance frameworks, and the HR infrastructure that lets your team actually function. Built for your stage, not a 500-person company.</div>
-      <span class="service-tag">Fractional · Project</span>
+      <div class="service-title">Notion Systems</div>
+      <div class="service-desc">Not just setup. I audit what you have, redesign what isn't working, and build Notion systems that actually scale with you. From onboarding hubs to full operating systems your team will genuinely use.</div>
+      <span class="service-tag">Project · Retainer</span>
     </div>
     <div class="service-card">
       <div class="service-num">02</div>
-      <div class="service-title">Internal Operations</div>
-      <div class="service-desc">Comms, workflows, and decision-making systems that make a fast-moving startup feel less chaotic. I turn friction into flow — without slowing you down to do it.</div>
+      <div class="service-title">People Operations</div>
+      <div class="service-desc">Hiring systems, onboarding, performance frameworks, and the people infrastructure that lets your team actually function. Built for your stage, not a 500-person company.</div>
       <span class="service-tag">Fractional · Project</span>
     </div>
     <div class="service-card">
       <div class="service-num">03</div>
-      <div class="service-title">Notion Systems</div>
-      <div class="service-desc">Your team's second brain — built properly. Notion workspaces that actually get used, from onboarding hubs to full operating systems for your business.</div>
-      <span class="service-tag">Project · Retainer</span>
+      <div class="service-title">Operations & Chief of Staff</div>
+      <div class="service-desc">Comms, workflows, decision-making, and a trusted right-hand on strategy and stakeholders. I keep everything moving so you stay focused on what only you can do.</div>
+      <span class="service-tag">Fractional · Project</span>
     </div>
     <div class="service-card">
       <div class="service-num">04</div>
       <div class="service-title">Leadership Capability</div>
-      <div class="service-desc">First-time managers, growing leadership teams, founders stepping up. I coach, advise, and work alongside your people as they grow into their roles.</div>
+      <div class="service-desc">Advisory support for first-time managers and growing leadership teams. I work alongside founders and their people to build the judgment, confidence, and frameworks that stick long after I'm gone.</div>
       <span class="service-tag">Advisory</span>
     </div>
-    <div class="service-card">
-      <div class="service-num">05</div>
-      <div class="service-title">Chief of Staff</div>
-      <div class="service-desc">A trusted right-hand on strategy, stakeholders, and operations. I keep everything moving so you stay focused on what only you can do.</div>
-      <span class="service-tag">Fractional</span>
-    </div>
-    <!-- Final card — quote + CTA -->
-    <div class="service-card service-card-accent">
-      <p style="font-family: var(--display); font-style: italic; font-weight: 300; font-size: 1.05rem; color: rgba(245,239,224,0.75); line-height: 1.6; flex-grow: 1;">"I can build the strategy and lay the first brick."</p>
-      <a href="#contact" class="btn-primary" style="align-self: flex-start; margin-top: 1.5rem;">Let's Talk →</a>
+    <div class="service-card" style="grid-column: span 2; min-height: auto; background: rgba(200,214,43,0.06); border-top: 1px solid rgba(255,255,255,0.07);">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+        <p style="font-family: var(--display); font-style: italic; font-weight: 300; font-size: 1.1rem; color: rgba(245,239,224,0.75); line-height: 1.6; max-width: 480px;">Not sure which one you need? That's okay. Most founders aren't. Let's talk and figure it out together.</p>
+        <a href="#contact" class="btn-primary" style="flex-shrink: 0;">Work With Me</a>
+      </div>
     </div>
   </div>
 </section>
@@ -1300,28 +1292,28 @@ footer {
   <div class="how-header">
     <p class="how-label">How It Works</p>
     <h2 class="how-h2">Simple to start.<br><em>Built to last.</em></h2>
-    <p class="how-sub">No months-long ramp-up, no endless discovery calls. I move quickly because I've done this before — and I respect that your time is the most expensive thing you have.</p>
+    <p class="how-sub">I get up to speed fast and get to work. No lengthy onboarding, no reinventing the wheel. Just clear thinking and sleeves rolled up from day one.</p>
   </div>
   <div class="steps">
     <div class="step">
       <div class="step-num">01</div>
       <div class="step-title">We Talk</div>
-      <div class="step-desc">A 30-minute conversation about where you're at and what's breaking. No prep, no pitch deck — just an honest chat.</div>
+      <div class="step-desc">A 30 to 60 minute conversation about where you're at, what's breaking, and what you actually need. No prep required.</div>
     </div>
     <div class="step">
       <div class="step-num">02</div>
       <div class="step-title">I Diagnose</div>
-      <div class="step-desc">I map the real problems — not just the symptoms. You get a clear picture of what to build first and why.</div>
+      <div class="step-desc">I map the real problems, not just the symptoms. You get a clear picture of what to build first and why.</div>
     </div>
     <div class="step">
       <div class="step-num">03</div>
       <div class="step-title">We Build</div>
-      <div class="step-desc">I roll my sleeves up. Systems, processes, and support built specifically for your team — nothing pulled from a template.</div>
+      <div class="step-desc">I roll my sleeves up. Systems, processes, and support built specifically for your team. Nothing pulled from a template.</div>
     </div>
     <div class="step">
       <div class="step-num">04</div>
       <div class="step-title">You Scale</div>
-      <div class="step-desc">The foundations are yours. Your team knows how things work. I'm still here if you need me — or you run it yourself.</div>
+      <div class="step-desc">The foundations are yours. Your team knows how things work. I'm still here if you need me, or you run it yourself.</div>
     </div>
   </div>
 </section>
@@ -1338,20 +1330,20 @@ footer {
   </div>
   <div class="about-text">
     <p class="about-label">About Grace</p>
-    <h2 class="about-h2">I help people do their best work — <em>in startups, in communities, and one day, in stadiums.</em></h2>
+    <h2 class="about-h2">I help people do their best work <em>in startups, in communities, and in sport.</em></h2>
     <p class="about-lead">
-      The throughline across everything I do is this: I help people belong to something and thrive inside it — whether that's a growing startup team, a community of solo operators, or a stadium full of female sports fans.
+      The throughline across everything I do is this: I help people belong to something and thrive inside it. Whether that's a growing startup team, a community of solo operators, or the world of women's sport I'm working my way toward.
     </p>
     <p class="about-body">
-      I've spent 7+ years across startups, health-tech, and professional services — building people functions, leading hiring, and running operations in Australia and globally. I know what it looks like when a growing team has no foundations, and I know exactly what to build first.
+      I've spent 5+ years across startups and small businesses, building people functions, leading hiring, and running operations. I know what it looks like when a growing team has no foundations, and I know exactly what to build first.
     </p>
     <div class="about-facts">
       <div class="about-fact">
-        <div class="about-fact-num">7+</div>
-        <div class="about-fact-label">Years across startups & health-tech</div>
+        <div class="about-fact-num">5+</div>
+        <div class="about-fact-label">Years across startups and small businesses</div>
       </div>
       <div class="about-fact">
-        <div class="about-fact-num">5–20</div>
+        <div class="about-fact-num">5 to 20</div>
         <div class="about-fact-label">The team size where I do my best work</div>
       </div>
     </div>
@@ -1359,24 +1351,7 @@ footer {
   </div>
 </section>
 
-<!-- ═══ TESTIMONIALS ═══ -->
-<!-- Psychology: social proof after the personal story seals the deal -->
-<section class="proof" id="proof">
-  <p class="proof-label">What Founders Say</p>
-  <h2 class="proof-h2">What working together<br><em>actually feels like</em></h2>
-  <div class="proof-grid">
-    <div class="proof-card">
-      <span class="proof-quote-mark">"</span>
-      <p class="proof-quote">Grace came in when we had no real people infrastructure and turned it into something we were actually proud of. She knew what we needed before we did.</p>
-      <p class="proof-attr">Founder, Early-Stage Health-Tech Startup</p>
-    </div>
-    <div class="proof-card">
-      <span class="proof-quote-mark">"</span>
-      <p class="proof-quote">She holds the strategy and the detail at the same time. That's rare. We went from chaos to clarity in six weeks — and it actually stuck.</p>
-      <p class="proof-attr">CEO, B2B SaaS Startup</p>
-    </div>
-  </div>
-</section>
+
 
 <!-- ═══ CTA + FORM ═══ -->
 <!-- Psychology: chartreuse = action, joy, energy. Different from the rest of the page so the eye goes here. -->
@@ -1386,28 +1361,13 @@ footer {
     <h2 class="cta-h2">
       Ready to stop firefighting<br>and <em>start building?</em>
     </h2>
-    <p class="cta-sub">Tell me a little about where you're at — I'll come back to you within 48 hours to see if we're a fit.</p>
+    <p class="cta-sub">Tell me a little about where you're at. I'll come back to you within 48 hours to book a discovery call.</p>
 
     <div class="cta-form-area">
       <p class="cta-form-title">Let's have a conversation</p>
-      <p class="cta-form-note">No pitch deck, no prep. Just a quick intro so I can come prepared.</p>
-      <div class="form-row">
-        <input class="form-input" type="text" placeholder="Your name">
-        <input class="form-input" type="email" placeholder="Your email">
-        <input class="form-input" type="text" placeholder="Your company / startup">
-        <select class="form-select">
-          <option value="" disabled selected>What are you looking for help with?</option>
-          <option>People Operations</option>
-          <option>Internal Operations & Systems</option>
-          <option>Notion Workspace</option>
-          <option>Leadership Capability</option>
-          <option>Chief of Staff Support</option>
-          <option>Not sure yet — let's talk</option>
-        </select>
-        <textarea class="form-input" rows="3" placeholder="Anything else I should know? (optional)" style="resize: none;"></textarea>
-      </div>
-      <button class="btn-form">Send →</button>
-      <p class="form-privacy">No spam. No hard sell. I'll respond within 48 hours.</p>
+      <p class="cta-form-note">Fill in the form below and I'll get back to you within 48 hours to book a 15-minute discovery call. No pitch, no pressure — just a conversation to see if we're a good fit.</p>
+      <iframe data-tally-src="https://tally.so/embed/xX42xE?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" title="Work With Grace"></iframe>
+      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
     </div>
   </div>
 </div>
@@ -1417,18 +1377,16 @@ footer {
   <div class="newsletter-inner">
     <div>
       <p class="newsletter-label">The Newsletter</p>
-      <h2 class="newsletter-h2">Honest dispatches from<br><em>the portfolio life</em></h2>
+      <h2 class="newsletter-h2">Ops Consultant. Sport Obsessive.<br><em>Writer.</em></h2>
       <p class="newsletter-body">
-        I write about building a career and life on your own terms — the real stuff. Clients, systems, freelancing, sport, and figuring it out in real time. No hustle culture. No curated highlights. Just honest, useful writing from someone doing the work.
+        Documenting the build of my business, career, and a life that has room for all of it. Nothing is fixed, nothing is final, everything is in play.
       </p>
     </div>
     <div class="newsletter-form-wrap">
-      <p class="newsletter-form-title">Join the Substack</p>
-      <p class="newsletter-form-sub">Read by founders, operators, and people building lives that don't fit in a job title.</p>
-      <input class="newsletter-input" type="text" placeholder="First name">
-      <input class="newsletter-input" type="email" placeholder="Email address">
-      <a href="https://graceperis.substack.com/" class="btn-charge">Subscribe →</a>
-      <p class="newsletter-note">I write on Substack. Clicking above takes you there to subscribe.</p>
+      <p class="newsletter-form-title">Read it on Substack</p>
+      <p class="newsletter-form-sub">Weekly. Honest. No hustle culture. No curated highlights.</p>
+      <a href="https://substack.com/@graceperis" target="_blank" rel="noopener" class="btn-charge" style="display: block; text-align: center; text-decoration: none; margin-top: 0.5rem;">Subscribe to my Substack →</a>
+      <p class="newsletter-note">Clicking above takes you directly to Substack to subscribe.</p>
     </div>
   </div>
 </section>
@@ -1443,8 +1401,8 @@ footer {
     <div class="footer-links">
       <a href="#services">Services</a>
       <a href="#about">About</a>
-      <a href="https://graceperis.substack.com/">Newsletter</a>
-      <a href="https://www.linkedin.com/in/grace-peris/">LinkedIn</a>
+      <a href="https://substack.com/@graceperis" target="_blank" rel="noopener">Newsletter</a>
+      <a href="https://www.linkedin.com/in/grace-peris/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="#contact">Work With Me</a>
     </div>
   </div>
